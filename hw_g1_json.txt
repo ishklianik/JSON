@@ -1,0 +1,124 @@
+JSON
+
+1. Создание внешнего репозитория JSON
+
+ зайти на Github, нажать +, выбрать New repository, 
+написать название репозитория JSON
+
+2. Клонировать репозиторий JSON на локальный компьютер
+$ git clone https://github.com/ishklianik/JSON.git
+
+3.Внутри локального  репозитория JSON создать файл new.json:
+
+заходим на репозиторий на внутреннем диске:
+  $ cd Json
+
+создаем файл new.json:
+$ touch new.json
+  
+проверяем создание:
+$ ls -la
+
+7. Добавить файл под git
+$ git add new.json
+
+8. Закоммитить файл
+  $ git commit -m "New file
+
+9. Отправить файл на внешний GitHub репозиторий
+$ git push 
+
+10. Отредактировать содержимое файла new.json -написать информацию о себе
+ (ФИО,возраст, количество домашних животных, желаемая будущая зарплата)
+
+$ cat >> new.json
+[{"name":"Iryna Shklianik"}
+{"age":43}
+{"number of pets":1}
+{"expected salary":"6000 USD"}]
+
+11.	Отправить изменения на внешний репозиторий
+
+поверка статуса:
+$ git status
+
+добавление файлов
+$ git add new.json
+
+коммит
+$ git commit -m "update"
+
+отправка информации на внешний репозиторий
+$ git push
+
+12. Создать  файл preferences.json
+$ touch preferences.json
+
+13.  В файл preferences.json добавить информацию о своих предпочтениях(Любимый фильм, 
+любимый сериал. любимая еда. время года. страна которую хотели бы посетить
+
+внесение информации в пустой файл
+
+$ cat >> preferences.json
+[{"favorite film":"Love actually"}
+ {"favorite series":"Bron"}
+{"favotite food":"asian cuisine"}
+{"favorite season":"summer"}
+{"country to visit":"Singapore"}]
+
+14. Создать файл skills.json , добавить информацию о скиллах которые будут изучены на курск :
+создание файла:
+$ touch  skills.json
+
+внесение информации в пустой файл:
+$ cat >> skills.json
+[{"skill1":"git"}
+{"skill2":"Postman"}
+{"skill3":"Charles"}
+{"skill4":"JS"}
+{"skill5":"SOAP UI"}
+{"skill6":"Katalon"}]
+
+15. Отправить сразу 2 файла н авнешний репозиторий
+  проверка статуса:
+$ git status
+
+  добавление нескольких (всех) файлов:
+$ git add .
+
+коммит:
+$ git commit -m "Add two files"
+
+отправка информации на внешний репозиторий:
+  $ git push
+
+ проверка статуса:
+$ git status
+
+16. На веб интерфейсе создать файл bug_report.json
+Нажать  ADD file
+
+17.  Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes
+
+18.На веб интерфейсе модифицировать файл bug_report.json, добавить баг-репорт в формате Json
+Открыть файл нажав на него
+Внести информацию
+
+19. Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes  внизу файла
+
+20. Синхронизировать внешний и локальный репозиторий JSON
+ проверка статуса:
+$ git status
+
+$ git fetch
+
+проверка статуса:
+$ git status
+
+отправка информации на локальный репозиторий:
+$ git pull
+
+ проверка статуса:
+$ git status
